@@ -48,6 +48,8 @@ namespace FloatingLabelDatePicker.Droid
 			{
 				element?.InvalidateMeasureNonVirtual(InvalidationTrigger.VerticalOptionsChanged);
 				_layout.Hint = hint;
+				//setting floating label color.
+				EditText.SetHintTextColor(Color.Accent.ToAndroid());
 			}
 		}
 	}
